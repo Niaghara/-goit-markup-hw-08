@@ -1,4 +1,9 @@
 .works {
+  @media screen and (max-width: 767px){
+  display: none;
+    }
+}
+.works {
   @extend %section;
   padding-bottom: 109px;
 }

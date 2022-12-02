@@ -1,19 +1,23 @@
 
-.container-nav {
-  display: flex;
-  align-items: center;
-}
 
+.menu-desktop{
+@media screen and (max-widht:767px) {
+  display:none
+}
+}
 .nav {
   display: flex;
   align-items: center;
   margin-right: auto;
+  
 }
 
 .site-nav {
   display: flex;
   align-items: center;
   gap: 50px;
+  
+
 }
 
 .site-nav__link {

@@ -1,6 +1,7 @@
 // utils syles
 @import './utils/variables';
 @import './utils/placeholders';
+@import './utils/breakpoints';
 
 // base styles
 @import './base/base';
@@ -14,6 +15,7 @@
 @import './components/header';
 @import './components/logo';
 @import './components/nav';
+@import './components/menumob';
 @import './components/hero';
 @import './components/advantages';
 @import './components/socials';

@@ -16,8 +16,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+
   </head>
 
   <body class="page">
@@ -27,22 +27,27 @@
           <a href="./index.html" class="logo">
             Web<span class="logo__header">Studio</span>
           </a>
-
-          <ul class="site-nav list">
-            <li class="site-nav__name">
-              <a href="./index.html" class="site-nav__link link current"
-                >Студія</a
-              >
-            </li>
-            <li class="site-nav__name">
-              <a href="./portfolio.html" class="site-nav__link link"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="site-nav__name">
-              <a href="./Contacts.html" class="site-nav__link link">Контакти</a>
-            </li>
-          </ul>
+          
+<!-- Menu desktop -->
+            <div class="nav-menu">
+            <ul class="site-nav list">
+              <li class="site-nav__name">
+                <a href="./index.html" class="site-nav__link link current"
+                  >Студія</a
+                >
+              </li>
+              <li class="site-nav__name">
+                <a href="./portfolio.html" class="site-nav__link link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="site-nav__name">
+                <a href="./Contacts.html" class="site-nav__link link"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
         <div class="nav-contacts">
           <ul class="list nav-contacts__list">
@@ -64,6 +69,21 @@
             </li>
           </ul>
         </div>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg 
+          width="40px" 
+          height="40px"
+          aria-label="Перемикач мобільного меню">
+            <use
+              class="icon-menu"
+              href="./images/icons/symbol-defs.svg#menu"></use>
+                        </svg>
+        </button>
       </div>
     </header>
 
@@ -203,7 +223,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#instagram"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -216,7 +236,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#twitter"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -229,7 +249,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#facebook"
-                        ></use></svg></a>
+                        ></use></svg            ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -242,7 +262,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#linkedin"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                 </ul>
               </div>
@@ -270,7 +290,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#instagram"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -283,7 +303,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#twitter"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -296,7 +316,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#facebook"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -309,7 +329,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#linkedin"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                 </ul>
               </div>
@@ -337,7 +357,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#instagram"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -350,7 +370,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#twitter"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -363,7 +383,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#facebook"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -376,7 +396,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#linkedin"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                 </ul>
               </div>
@@ -404,7 +424,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#instagram"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -417,7 +437,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#twitter"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -430,7 +450,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#facebook"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                   <li class="socials__item">
                     <a
@@ -443,7 +463,7 @@
                       <svg class="socials__icon" width="20" height="20">
                         <use
                           href="./images/icons/symbol-defs.svg#linkedin"
-                        ></use></svg></a>
+                        ></use></svg                    ></a>
                   </li>
                 </ul>
               </div>
@@ -467,27 +487,27 @@
             <li class="card-set__item clients-list__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__logo" width="106px" height="60px">
-                  <use href="./images/icons/symbol-defs.svg#logo2"></use></svg></a>
+                  <use href="./images/icons/symbol-defs.svg#logo2"></use></svg              ></a>
             </li>
             <li class="card-set__item clients-list__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__logo" width="106px" height="60px">
-                  <use href="./images/icons/symbol-defs.svg#logo3"></use></svg></a>
+                  <use href="./images/icons/symbol-defs.svg#logo3"></use></svg              ></a>
             </li>
             <li class="card-set__item clients-list__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__logo" width="106px" height="60px">
-                  <use href="./images/icons/symbol-defs.svg#logo4"></use></svg></a>
+                  <use href="./images/icons/symbol-defs.svg#logo4"></use></svg              ></a>
             </li>
             <li class="card-set__item clients-list__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__logo" width="106px" height="60px">
-                  <use href="./images/icons/symbol-defs.svg#logo5"></use></svg></a>
+                  <use href="./images/icons/symbol-defs.svg#logo5"></use></svg              ></a>
             </li>
             <li class="card-set__item clients-list__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__logo" width="106px" height="60px">
-                  <use href="./images/icons/symbol-defs.svg#logo6"></use></svg></a>
+                  <use href="./images/icons/symbol-defs.svg#logo6"></use></svg              ></a>
             </li>
           </ul>
         </div>
@@ -513,7 +533,9 @@
                 </a>
               </li>
               <li class="footer-list__address">
-                <a href="mailto:info@devstudio.com" class="footer-list__contacts"
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer-list__contacts"
                   >info@devstudio.com</a
                 >
               </li>
@@ -536,10 +558,14 @@
                 rel="noopener norefferer"
                 aria-label="Instagram"
               >
-                <svg class="socials__icon footer-socials__icon" width="20" height="20">
+                <svg
+                  class="socials__icon footer-socials__icon"
+                  width="20"
+                  height="20"
+                >
                   <use
                     href="./images/icons/symbol-defs.svg#instagram"
-                  ></use></svg></a>
+                  ></use></svg              ></a>
             </li>
             <li class="socials__item">
               <a
@@ -549,8 +575,12 @@
                 rel="noopener norefferer"
                 aria-label="Twitter"
               >
-                <svg class="socials__icon footer-socials__icon" width="20" height="20">
-                  <use href="./images/icons/symbol-defs.svg#twitter"></use></svg></a>
+                <svg
+                  class="socials__icon footer-socials__icon"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/icons/symbol-defs.svg#twitter"></use></svg              ></a>
             </li>
             <li class="socials__item">
               <a
@@ -560,10 +590,14 @@
                 rel="noopener norefferer"
                 aria-label="Instagram"
               >
-                <svg class="socials__icon footer-socials__icon" width="20" height="20">
+                <svg
+                  class="socials__icon footer-socials__icon"
+                  width="20"
+                  height="20"
+                >
                   <use
                     href="./images/icons/symbol-defs.svg#facebook"
-                  ></use></svg></a>
+                  ></use></svg              ></a>
             </li>
             <li class="socials__item">
               <a
@@ -573,10 +607,14 @@
                 rel="noopener norefferer"
                 aria-label="Instagram"
               >
-                <svg class="socials__icon footer-socials__icon" width="20" height="20">
+                <svg
+                  class="socials__icon footer-socials__icon"
+                  width="20"
+                  height="20"
+                >
                   <use
                     href="./images/icons/symbol-defs.svg#linkedin"
-                  ></use></svg></a>
+                  ></use></svg              ></a>
             </li>
           </ul>
         </div>
@@ -696,11 +734,79 @@
               <a class="modal-form-agreement__link" href="">Умови договору</a>
             </label>
           </div>
-          <button class="button modal-form__button" type="submit">Відправити</button>
+          <button class="button modal-form__button" type="submit">
+            Відправити
+          </button>
         </form>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+      <svg 
+      width="40px" 
+      height="40px"
+      aria-label="Перемикач мобільного меню">
+       <use
+          class="icon-menu-close" 
+          href="./images/icons/symbol-defs.svg#close"></use>
+      </svg>
+     </button>
+     <ul class="mobile-menu__list list">
+       <li class="mobile-menu__name">
+         <a href="./index.html" class="mobile-menu__link link current"
+           >Студія</a
+         >
+       </li>
+       <li class="mobile-menu__name">
+         <a href="./portfolio.html" class="mobile-menu__link link"
+           >Портфоліо</a
+         >
+       </li>
+       <li class="mobile-menu__name">
+         <a href="./Contacts.html" class="mobile-menu__link link"
+           >Контакти</a
+         >
+       </li>
+     </ul>
+
+     <ul class="mobile-menu-contacts__list">
+      <li>
+        <a href="tel:+380961111111" class="mobile-menu-phone">
+          +38 096 111 11 11 </a>
+      </li>
+       <li>
+       <a href="mailto:info@devstudio.com" class="mobile-menu-mailto">
+         info@devstudio.com</a>
+     </li>
+
+   </ul>
+
+   <ul class="mobile-socials list">
+     <li class="mobile-socials-item">
+       <a href="" class="mobile-social-link link">Instagram</a>
+     </li>
+     <li class="mobile-socials-item">
+       <a href="" class="mobile-social-link link">Twitter</a>
+     </li>
+     <li class="mobile-socials-item">
+       <a href="" class="mobile-social-link link">Facebook</a>
+     </li>
+     <li class="mobile-socials-item">
+       <a href="" class="mobile-social-link link">LinkedIn</a>
+     </li>
+   </ul>
+ </div>
+
+ <script
+ defer
+ src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+ integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+ crossorigin="anonymous"
+></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

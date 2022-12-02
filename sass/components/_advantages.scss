@@ -3,13 +3,18 @@
   @extend %section;
   padding-bottom: 0;
 }
+
 .advantages__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   color: var(--title-text-color);
   margin-bottom: 10px;
+  @media screen and (min-width: 768px){
+    text-align: left;
+  }
 }
 
 .advantages__text {
@@ -21,12 +26,27 @@
 }
 
 .advantages__card {
-  --items: 4;
   min-width: 270px;
+  padding-bottom: 30px;
+  @media screen and (min-width: 768px){
+    --items: 2;
+  
+  }
+  @media screen and (min-width: 1200px){
+    --items: 4;
+  }
+}
+
+.advantages__card:nth-child(2n) {
+  @media screen and (min-width: 768px){
+  margin-right: 0;
+}
 }
 
 .advantages__card:nth-child(4n) {
+  @media screen and (min-width: 1200px){
   margin-right: 0;
+}
 }
 
 .card-set__icon {
