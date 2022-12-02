@@ -6,11 +6,6 @@
   list-style: none;
 }
 
-@media  (max-width: 767px) {
-  .js-menu-container {
-    display: none;
-  }
-  }
 
   .menu-toggle {
     min-height: 40px;
@@ -52,6 +47,10 @@
     padding: 40px 48px;
     background-color: #ffffff;
     z-index:999;
+    
+    @media (min-width:768px) {
+        display: none;
+      }
   }
 
 .menu-container .menu-toggle {
