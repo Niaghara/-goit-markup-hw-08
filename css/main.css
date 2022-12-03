@@ -194,6 +194,15 @@ img {
   color: var(--primary-white-color);
 }
 
+.container-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -292,9 +301,9 @@ img {
   margin-right: 0;
   gap: 50px;
 }
-@media screen and (max-widht: 767px) {
+@media screen and (min-widht: 768px) {
   .nav-contacts__list {
-    display: none;
+    display: block;
   }
 }
 
