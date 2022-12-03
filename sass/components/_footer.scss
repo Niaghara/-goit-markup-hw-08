@@ -8,6 +8,15 @@
   display: flex;
   align-items: baseline;
   gap: 70px;
+  
+  @media screen and (min-width: 768px){
+  flex-direction: column;
+
+}
+
+@media screen and (min-width: 1200px){
+
+}
 }
 .footer-list {
   display: block;
@@ -58,10 +67,12 @@ footer-socials__icon {
 }
 
 .signpost-form-group {
+  @media screen and (min-width: 1200px){
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
+}
 }
 
 .form-email {
