@@ -45,7 +45,7 @@
   }
 
   
-.menu-container .menu-toggle {
+.container-nav .menu-toggle {
   position: absolute;
   top:22px;
   right: 22px;
@@ -92,4 +92,18 @@ line-height: 1.17;
 letter-spacing: 0.02em;
 
 color: #757575;
+}
+.mobile-socials {
+  display: flex;
+
+}
+
+.mobile-social-link {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: var(--accent-color);
 }
