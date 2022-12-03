@@ -171,11 +171,6 @@ img {
   left: 0;
   width: 100%;
 }
-@media screen and (min-width: 480px) {
-  .header {
-    position: relative;
-  }
-}
 
 .logo {
   display: inline-block;
@@ -199,12 +194,6 @@ img {
   color: var(--primary-white-color);
 }
 
-@media screen and (min-widht: 768px) {
-  .nav-menu {
-    display: none;
-  }
-}
-
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,6 +202,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-right: auto;
+}
+@media screen and (max-widht: 767px) {
+  .nav {
+    display: none;
+  }
 }
 
 .site-nav {
@@ -223,6 +217,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 50px;
+}
+@media screen and (max-widht: 767px) {
+  .site-nav {
+    display: none;
+  }
 }
 
 .site-nav__link {
@@ -293,6 +292,11 @@ img {
   margin-right: 0;
   gap: 50px;
 }
+@media screen and (max-widht: 767px) {
+  .nav-contacts__list {
+    display: none;
+  }
+}
 
 .mailto,
 .phone {
@@ -324,15 +328,26 @@ img {
   fill: currentColor;
 }
 
-.js-menu-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: auto;
-  list-style: none;
+.menu-container {
+  display: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 48px;
+  background-color: #ffffff;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 250 ms var(--timing-function);
+  transition: -webkit-transform 250 ms var(--timing-function);
+  transition: transform 250 ms var(--timing-function);
+  transition: transform 250 ms var(--timing-function), -webkit-transform 250 ms var(--timing-function);
 }
 
 .menu-toggle {
@@ -355,38 +370,15 @@ img {
   border: none;
   outline: none;
 }
-
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
+
 .menu-toggle:hover,
 .menu-toggle:focus {
   fill: var(--accent-color);
-}
-
-.menu-container {
-  position: fixed;
-  top: 100%;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  padding: 40px 48px;
-  background-color: #ffffff;
-  z-index: 999;
-}
-@media (min-width: 768px) {
-  .menu-container {
-    display: none;
-  }
 }
 
 .menu-container .menu-toggle {

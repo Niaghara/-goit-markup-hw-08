@@ -1,11 +1,22 @@
-.js-menu-container 
+.menu-container 
 {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-  list-style: none;
+  display: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px 48px;
+  background-color: #ffffff;
+  z-index: 999;
+
+  transform: translateX(100%);
+
 }
 
+.menu-container.is-open {
+  transform: translateX(0);
+  transition: transform 250 ms var(--timing-function);
+}
 
   .menu-toggle {
     min-height: 40px;
@@ -22,11 +33,9 @@
     cursor: pointer;
     border: none;
     outline: none;
-  }
 
-  @media (min-width:768px) {
-    .menu-toggle {
-      display: none;
+    @media (min-width:768px) {
+        display: none;
     }
   }
 
@@ -35,24 +44,7 @@
     fill: var(--accent-color);
   }
 
-  .menu-container {
-    position: fixed;
-    top: 100%;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    
-    width: 100vw;
-    height: 100vh;
-    padding: 40px 48px;
-    background-color: #ffffff;
-    z-index:999;
-    
-    @media (min-width:768px) {
-        display: none;
-      }
-  }
-
+  
 .menu-container .menu-toggle {
   position: absolute;
   top:22px;
