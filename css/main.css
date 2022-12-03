@@ -967,6 +967,7 @@ footer-socials__icon {
   position: fixed;
   top: 0;
   left: 0;
+  overflow-y: scroll;
   z-index: 100;
   width: 100%;
   height: 100%;
@@ -982,11 +983,6 @@ footer-socials__icon {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
   width: 528px;
   height: 581px;
   padding: 40px;
@@ -996,6 +992,15 @@ footer-socials__icon {
   transition: opacity 500ms, -webkit-transform 500ms;
   transition: transform 500ms, opacity 500ms;
   transition: transform 500ms, opacity 500ms, -webkit-transform 500ms;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+  }
 }
 
 .backdrop.is-hidden .modal {
