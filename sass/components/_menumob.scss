@@ -1,8 +1,7 @@
-.menu-container 
-{
+.menu-container{
   display: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100vw;
   height: 100vh;
   padding: 40px 48px;
@@ -10,7 +9,6 @@
   z-index: 999;
 
   transform: translateX(100%);
-
 }
 
 .menu-container.is-open {
@@ -18,47 +16,45 @@
   transition: transform 250 ms var(--timing-function);
 }
 
-  .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin-left:auto;
-    padding: 0;
-    background-color: transparent;
-    color: var(--title-text-color);
-    cursor: pointer;
-    border: none;
-    outline: none;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  color: var(--title-text-color);
+  cursor: pointer;
+  border: none;
+  outline: none;
 
-    @media (min-width:768px) {
-        display: none;
-    }
+  @media (min-width: 768px) {
+    display: none;
   }
+}
 
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    fill: var(--accent-color);
-  }
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: var(--accent-color);
+}
 
-  
 .container-nav .menu-toggle {
   position: absolute;
-  top:22px;
-  right: 22px;
-
+  top: 10px;
+  right: 10px;
 }
 
 .mobile-menu__list {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
 
-list-style: none;
+  list-style: none;
 
-margin-bottom: auto;
+  margin-bottom: auto;
 }
 
 .mobile-menu__list .link {
@@ -72,38 +68,35 @@ margin-bottom: auto;
 }
 
 .mobile-menu-phone {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 34px;
-line-height: 1.18;
-letter-spacing: 0.02em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
 
-color: #2196F3;
-
+  color: #2196f3;
 }
 .mobile-menu-mailto {
-  
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 1.17;
-letter-spacing: 0.02em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 
-color: #757575;
+  color: #757575;
 }
 .mobile-socials {
   display: flex;
-
 }
 
 .mobile-social-link {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 1.22;
-letter-spacing: 0.02em;
-color: var(--accent-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
