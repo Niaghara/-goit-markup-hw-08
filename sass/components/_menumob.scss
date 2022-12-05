@@ -1,5 +1,5 @@
-.menu-container{
- position: fixed;
+.menu-container {
+  position: fixed;
   top: 0;
   right: 0;
   width: 100vw;
@@ -68,16 +68,15 @@
   color: var(--accent-color);
 }
 
-.mobile-menu__link{
-  
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 40px;
-line-height: 1.18;
-letter-spacing: 0.02em;
+.mobile-menu__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
 
-color: #212121;
+  color: #212121;
 }
 
 .mobile-menu-phone {
@@ -87,13 +86,12 @@ color: #212121;
   letter-spacing: 0.02em;
 
   color: #2196f3;
-
 }
 
 .mobile-phone {
   margin-bottom: 32px;
 }
-.mobile-menu-contacts__list{
+.mobile-menu-contacts__list {
   padding: 0;
   margin-bottom: 64px;
 }
@@ -123,4 +121,3 @@ color: #212121;
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-

@@ -1,5 +1,4 @@
-
-.advantages{
+.advantages {
   @extend %section;
   padding-bottom: 0;
 }
@@ -12,7 +11,7 @@
   text-align: center;
   color: var(--title-text-color);
   margin-bottom: 10px;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     text-align: left;
   }
 }
@@ -28,25 +27,24 @@
 .advantages__card {
   min-width: 270px;
   padding-bottom: 30px;
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     --items: 2;
-  
   }
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     --items: 4;
   }
 }
 
 .advantages__card:nth-child(2n) {
-  @media screen and (min-width: 768px){
-  margin-right: 0;
-}
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
 }
 
 .advantages__card:nth-child(4n) {
-  @media screen and (min-width: 1200px){
-  margin-right: 0;
-}
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
 }
 
 .card-set__icon {

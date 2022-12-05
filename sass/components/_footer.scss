@@ -5,77 +5,71 @@
 }
 
 .container-footer {
-  @media screen and (max-width: 767px){
-    display:block;
+  @media screen and (max-width: 767px) {
+    display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
-  @media screen and (min-width: 768px){
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
 
-  @media screen and (min-width: 1200px){
-  gap: 70px;
-  align-items: baseline;
-}
+  @media screen and (min-width: 1200px) {
+    gap: 70px;
+    align-items: baseline;
+  }
 }
 
 .footer-address-container,
 .footer-socials-contacts,
 .signpost-form {
-  @media screen and (max-width: 767px){
-margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
   }
-  @media screen and (min-width: 768px){
-margin-left: 76px;
-margin-right: 86px;
-margin-bottom: 60px;
-text-align: center;
-
-}
-@media screen and (min-width: 1200px){
-  margin-left: 0;
-  margin-right: 0;
-margin-bottom: 0;
-text-align: left;
-gap:70px;
-  
+  @media screen and (min-width: 768px) {
+    margin-left: 76px;
+    margin-right: 86px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-align: left;
+    gap: 70px;
   }
 }
 
 .signpost-form {
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
     text-align: center;
   }
 
-  @media screen and (min-width: 1200px){
-
+  @media screen and (min-width: 1200px) {
     text-align: left;
   }
-
 }
 .footer-address-container .logo {
-  @media screen and (min-width: 100px){
-margin-left: auto;
-margin-right: auto;
-}
-@media screen and (min-width: 1200px){
-  margin-left: 0;
-
+  @media screen and (min-width: 100px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
   }
 }
 
 .footer-list {
   display: block;
   margin-top: 30px;
-  
 }
 
 .footer-list__location {
@@ -100,11 +94,10 @@ margin-right: auto;
 .footer-list__address {
   display: block;
 
-&:not(:last-child) {
-  margin-bottom: 9px;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
-}
-
 
 .footer-socials-title,
 .signpost-form-title {
@@ -115,7 +108,6 @@ margin-right: auto;
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
-
 }
 
 footer-socials__icon {
@@ -125,7 +117,7 @@ footer-socials__icon {
 .signpost-form-group {
   @media screen and (max-width: 1199px) {
     display: block;
-    }
+  }
 
   display: flex;
   justify-content: center;
@@ -133,17 +125,16 @@ footer-socials__icon {
   gap: 12px;
 }
 
-
 .form-email {
   display: block;
   margin: 0;
   padding: 16px 15px;
   min-width: 358px;
-  @media screen and (max-width: 1199px){
-width: 450px;
-margin-bottom: 20px;
-margin-left: auto;
-margin-right: auto;
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   min-height: 50px;
   font-weight: 400;
@@ -155,12 +146,11 @@ margin-right: auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-
-&:placeholder-shown {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
+  &:placeholder-shown {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
