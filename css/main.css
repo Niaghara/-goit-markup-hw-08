@@ -514,7 +514,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 .mobile-social-link {
@@ -527,7 +527,18 @@ p {
   color: var(--accent-color);
 }
 
-.decor-line {
+.mobile-socials-item {
+  position: relative;
+}
+
+.mobile-socials-item:not(:last-child)::after {
+  position: absolute;
+  top: 0%;
+  right: -12px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: block;
+  content: "";
   width: 1px;
   height: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -541,8 +552,8 @@ p {
           transition-timing-function: var(--timing-function);
 }
 
-.mobile-socials:hover .decor-line,
-.mobile-socials:focus .decor-line {
+.mobile-socials:hover .mobile-socials-item::after,
+.mobile-socials:focus .mobile-socials-item::after {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
