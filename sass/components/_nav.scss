@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
 }
-.menu-toggle {
+.container-nav .menu-toggle {
   position: absolute;
   margin-left: auto;
 }
@@ -74,6 +74,8 @@
 }
 
 .current::after {
+  @media screen and (min-width: 768px) {
+ 
   position: absolute;
   content: "";
   width: 100%;
@@ -82,6 +84,7 @@
   bottom: 0;
   background: #2196f3;
   border-radius: 2px;
+}
 }
 
 .nav-contacts__list {
