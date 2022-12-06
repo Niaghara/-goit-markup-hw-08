@@ -514,7 +514,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .mobile-social-link {
@@ -525,6 +525,26 @@ p {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+.decor-line {
+  width: 1px;
+  height: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: var(--timing-function);
+          transition-timing-function: var(--timing-function);
+}
+
+.mobile-socials:hover .decor-line,
+.mobile-socials:focus .decor-line {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .hero {
