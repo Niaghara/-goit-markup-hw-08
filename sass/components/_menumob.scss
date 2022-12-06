@@ -19,6 +19,8 @@
   transition: transform 250 ms var(--timing-function);
 }
 
+
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -84,16 +86,18 @@
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-
+  text-decoration: none;
   color: #2196f3;
 }
 
 .mobile-phone {
   margin-bottom: 32px;
+
 }
 .mobile-menu-contacts__list {
   padding: 0;
   margin-bottom: 64px;
+  text-decoration: none;
 }
 
 .mobile-menu-mailto {
@@ -120,4 +124,5 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  
 }

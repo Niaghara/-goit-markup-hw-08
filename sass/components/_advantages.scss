@@ -1,6 +1,9 @@
 .advantages {
   @extend %section;
-  padding-bottom: 0;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
 }
 
 .advantages__title {
@@ -27,12 +30,27 @@
 .advantages__card {
   min-width: 270px;
   padding-bottom: 30px;
+  
+  @media screen and (max-width: 767px) {
+    --items: 1;
+  margin-bottom: 30px;
+  padding-bottom: 0;
+  &:last-child{
+ margin-bottom: 0;
+  }
+}
   @media screen and (min-width: 768px) {
     --items: 2;
+    padding-bottom: 0;
+    &:last-child{
+      padding-bottom: 0;
+      margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     --items: 4;
+    padding-bottom: 0;
   }
+}
 }
 
 .advantages__card:nth-child(2n) {

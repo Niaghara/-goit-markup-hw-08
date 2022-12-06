@@ -1,7 +1,13 @@
 .container-nav {
+  position: relative;
   display: flex;
   align-items: center;
 }
+.menu-toggle {
+  position: absolute;
+  margin-left: auto;
+}
+
 .container-nav .logo {
   @media screen and (max-width: 767px) {
     padding-top: 16px;
@@ -119,8 +125,8 @@
     padding-bottom: 32px;
   }
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
